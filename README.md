@@ -32,7 +32,7 @@ The framework of SCMVC. We propose a hierarchical network architecture to separa
 ## 4.Usage
 
 ### Paper:
-Self-Weighted Contrastive Fusion for Deep Multi-View Clustering: https://ieeexplore.ieee.org/document/10499831
+Self-Weighted Contrastive Fusion for Deep Multi-View Clustering: https://ieeexplore.ieee.org/document/10499831.
 
 ### To test the trained model, run:
 ```bash

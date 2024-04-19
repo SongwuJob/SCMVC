@@ -8,9 +8,9 @@ This repo contains the code and data of our paper published in *IEEE Transaction
 
 ## 1. Workflow of SCMVC
 
-<img src="https://github.com/SongwuJob/figures/workflow.png"  width="897" height="317" />
+<img src="https://github.com/SongwuJob/SCMVC/tree/main/figures/workflow.png"  width="897" height="317" />
 
-The framework of SCMVC. We propose a hierarchical network architecture to separate the consistency objective from the reconstruction objective. Specifically, the feature learning autoencoders first project the raw data into a low-dimensional latent space $\left\{\mathbf{Z}^v\right\}_{v=1}^M$. Then, two feature MLPs learn view-consensus features $\left\{\mathbf{R}^v\right\}_{v=1}^M$ and global features $\mathbf{H}$, respectively. Particularly, a novel self-weighting method adaptively strengthens useful views in feature fusion, and weakens unreliable views, to implement multi-view contrastive fusion.
+The framework of SCMVC. We propose a hierarchical network architecture to separate the consistency objective from the reconstruction objective. Specifically, the feature learning autoencoders first project the raw data into a low-dimensional latent space $\{\mathbf{Z}^v\}_{v=1}^M$. Then, two feature MLPs learn view-consensus features $\{\mathbf{R}^v\}_{v=1}^M$ and global features $\mathbf{H}$, respectively. Particularly, a novel self-weighting method adaptively strengthens useful views in feature fusion, and weakens unreliable views, to implement multi-view contrastive fusion.
 
 ## 2.Requirements
 - python==3.7.13
@@ -60,7 +60,7 @@ we compare our proposed SCMVC with 10 state-of-the-art multi-view clustering met
 - GCFAggMVC: [global and cross-view feature aggregation for multi-view clustering](https://github.com/Galaxy922/GCFAggMVC)
 - DealMVC: [dual contrastive calibration for multi-view clustering](https://github.com/xihongyang1999/DealMVC)
 
-<img src="https://github.com/SongwuJob/figures/perfprmance.png"  width="897"  />
+<img src="https://github.com/SongwuJob/SCMVC/tree/main/figures/performance.png"  width="897"  />
 
 ## 6.Acknowledgments
 

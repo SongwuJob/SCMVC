@@ -16,7 +16,7 @@ from dataloader import load_data
 # Cifar100
 # Prokaryotic
 # Synthetic3d
-Dataname = 'BDGP'
+Dataname = 'MNIST-USPS'
 parser = argparse.ArgumentParser(description='test')
 parser.add_argument('--dataset', default=Dataname)
 parser.add_argument("--feature_dim", default=64)

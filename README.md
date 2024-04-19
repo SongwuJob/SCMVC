@@ -10,7 +10,7 @@ This repo contains the code and data of our paper published in *IEEE Transaction
 
 <img src="https://github.com/SongwuJob/SCMVC/tree/main/figures/workflow.png"  width="897" height="317" />
 
-The framework of SCMVC. We propose a hierarchical network architecture to separate the consistency objective from the reconstruction objective. Specifically, the feature learning autoencoders first project the raw data into a low-dimensional latent space $\{\mathbf{Z}^v\}_{v=1}^M$. Then, two feature MLPs learn view-consensus features $\{\mathbf{R}^v\}_{v=1}^M$ and global features $\mathbf{H}$, respectively. Particularly, a novel self-weighting method adaptively strengthens useful views in feature fusion, and weakens unreliable views, to implement multi-view contrastive fusion.
+The framework of SCMVC. We propose a hierarchical network architecture to separate the consistency objective from the reconstruction objective. Specifically, the feature learning autoencoders first project the raw data into a low-dimensional latent space $\mathbf{Z}$. Then, two feature MLPs learn view-consensus features $\mathbf{R}$ and global features $\mathbf{H}$, respectively. Particularly, a novel self-weighting method adaptively strengthens useful views in feature fusion, and weakens unreliable views, to implement multi-view contrastive fusion.
 
 ## 2.Requirements
 - python==3.7.13

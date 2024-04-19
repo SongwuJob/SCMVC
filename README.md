@@ -61,7 +61,6 @@ we compare our proposed SCMVC with 10 state-of-the-art multi-view clustering met
 - DealMVC: [dual contrastive calibration for multi-view clustering](https://github.com/xihongyang1999/DealMVC)
 
 <img src="https://github.com/SongwuJob/SCMVC/blob/main/figures/performance.png"  width="900"  />
-
 <img src="https://github.com/SongwuJob/SCMVC/blob/main/figures/view_change.png"  width="900"  />
 
 ## 6.Acknowledgments

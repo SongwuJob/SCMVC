@@ -62,6 +62,8 @@ we compare our proposed SCMVC with 10 state-of-the-art multi-view clustering met
 
 <img src="https://github.com/SongwuJob/SCMVC/blob/main/figures/performance.png"  width="900"  />
 
+<img src="https://github.com/SongwuJob/SCMVC/blob/main/figures/view_change.png"  width="900"  />
+
 ## 6.Acknowledgments
 
 Our proposed SCMVC are inspired by [MFLVC](https://github.com/SubmissionsIn/MFLVC), and [GCFAggMVC](https://github.com/Galaxy922/GCFAggMVC). Thanks for these valuable works.

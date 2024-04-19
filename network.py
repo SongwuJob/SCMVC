@@ -36,7 +36,7 @@ class Decoder(nn.Module):
     def forward(self, x):
         return self.decoder(x)
 
-
+# SCMVC Network
 class Network(nn.Module):
     def __init__(self, view, input_size, feature_dim, high_feature_dim, device):
         super(Network, self).__init__()

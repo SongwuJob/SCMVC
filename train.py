@@ -102,7 +102,7 @@ def compute_view_value(rs, H, view):
         related_sim = torch.matmul(rs[v],H.t())
         # The implementation of MMD
         w_v = (torch.sum(view_sim) + torch.sum(global_sim) - 2 * torch.sum(related_sim)) / (N*N)
-        w.append(torch.exp(-W_v))
+        w.append(torch.exp(-w_v))
     w = torch.stack(w)
     w = w / torch.sum(w)
     return w.squeeze()

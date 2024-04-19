@@ -1,6 +1,6 @@
 ## Self-Weighted Contrastive Fusion for Deep Multi-View Clustering
 > **Authors:**
-Song Wu, Yan Zheng, Yazhou Ren, Jing He, xiaorong Pu, shudong Huang, Zhifeng Hao, Lifang He.
+Song Wu, Yan Zheng, Yazhou Ren, Jing He, Xiaorong Pu, shudong Huang, Zhifeng Hao, Lifang He.
 
 This repository contains the code and data of our paper published in *IEEE Transactions on Multimedia (TMM)*： [Self-Weighted Contrastive Fusion for Deep Multi-View Clustering](https://ieeexplore.ieee.org/document/10499831).
 

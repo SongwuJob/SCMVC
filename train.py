@@ -94,18 +94,18 @@ data_loader = torch.utils.data.DataLoader(
 
 def compute_view_value(rs, H, view):
     N = H.shape[0]
-    W = []
+    w = []
     # all features are normalized
     global_sim = torch.matmul(H,H.t())
     for v in range(view):
         view_sim = torch.matmul(rs[v],rs[v].t())
         related_sim = torch.matmul(rs[v],H.t())
         # The implementation of MMD
-        W_v = (torch.sum(view_sim) + torch.sum(global_sim) - 2 * torch.sum(related_sim)) / (N*N)
-        W.append(torch.exp(-W_v))
-    W = torch.stack(W)
-    W = W / torch.sum(W)
-    return W.squeeze()
+        w_v = (torch.sum(view_sim) + torch.sum(global_sim) - 2 * torch.sum(related_sim)) / (N*N)
+        w.append(torch.exp(-W_v))
+    w = torch.stack(w)
+    w = w / torch.sum(w)
+    return w.squeeze()
 
 
 def pretrain(epoch):
@@ -123,7 +123,7 @@ def pretrain(epoch):
         loss.backward()
         optimizer.step()
         tot_loss += loss.item()
-    #print('Epoch {}'.format(epoch), 'Loss:{:.6f}'.format(tot_loss/len(data_loader)))
+    print('Epoch {}'.format(epoch), 'Loss:{:.6f}'.format(tot_loss/len(data_loader)))
 
 def contrastive_train(epoch):
     tot_loss = 0.
@@ -148,7 +148,7 @@ def contrastive_train(epoch):
         loss.backward()
         optimizer.step()
         tot_loss += loss.item()
-    #print('Epoch {}'.format(epoch), 'Loss:{:.6f}'.format(tot_loss/len(data_loader)))
+    print('Epoch {}'.format(epoch), 'Loss:{:.6f}'.format(tot_loss/len(data_loader)))
 
 accs = []
 nmis = []
@@ -184,4 +184,7 @@ for i in range(T):
         epoch += 1
 
     # The final result
+    accs.append(best_acc)
+    nmis.append(best_nmi)
+    purs.append(best_pur)
     print('The best clustering performace: ACC = {:.4f} NMI = {:.4f} PUR={:.4f}'.format(best_acc, best_nmi, best_pur))

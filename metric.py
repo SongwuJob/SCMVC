@@ -73,7 +73,7 @@ def valid(model, device, dataset, view, data_size, class_num, eval_h=False, epoc
                                                                                      v + 1, ari,
                                                                                      v + 1, pur))
 
-    # Clustering results on global features each view
+    # Clustering results on global features
     kmeans = KMeans(n_clusters=class_num, n_init=100)
     y_pred = kmeans.fit_predict(H.cpu().data.numpy())
     nmi, ari, acc, pur = evaluate(labels, y_pred)

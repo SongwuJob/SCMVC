@@ -2,13 +2,13 @@
 > **Authors:**
 Song Wu, Yan Zheng, Yazhou Ren, Jing He, xiaorong Pu, shudong Huang, Zhifeng Hao, Lifang He.
 
-This repo contains the code and data of our paper published in *IEEE Transactions on Multimedia* [Self-Weighted Contrastive Fusion for Deep Multi-View Clustering](https://ieeexplore.ieee.org/document/10499831).
+This repo contains the code and data of our paper published in *IEEE Transactions on Multimedia (TMM)* [Self-Weighted Contrastive Fusion for Deep Multi-View Clustering](https://ieeexplore.ieee.org/document/10499831).
 
 <!-- > [Self-Weighted Contrastive Fusion for Deep Multi-View Clustering](https://ieeexplore.ieee.org/document/10499831) -->
 
 ## 1. Workflow of SCMVC
 
-<img src="https://github.com/SongwuJob/SCMVC/tree/main/figures/workflow.png"  width="897" height="317" />
+<img src="https://github.com/SongwuJob/SCMVC/blob/main/figures/workflow.png"  width="897" height="317" />
 
 The framework of SCMVC. We propose a hierarchical network architecture to separate the consistency objective from the reconstruction objective. Specifically, the feature learning autoencoders first project the raw data into a low-dimensional latent space $\mathbf{Z}$. Then, two feature MLPs learn view-consensus features $\mathbf{R}$ and global features $\mathbf{H}$, respectively. Particularly, a novel self-weighting method adaptively strengthens useful views in feature fusion, and weakens unreliable views, to implement multi-view contrastive fusion.
 
@@ -25,7 +25,7 @@ The framework of SCMVC. We propose a hierarchical network architecture to separa
 
 ## 3.Datasets
 
-- The MNIST-USPS and BDGP datasets are placed in "data" folder. The other datasets could be downloaded from [cloud](https://pan.baidu.com/s/18If7bx2ZOVZhyijtzycjXA). key: data
+- The all datasets could be downloaded from [cloud](https://pan.baidu.com/s/18If7bx2ZOVZhyijtzycjXA). key: data
 
 - Particularly, thanks to the valuable works [MFLVC](https://github.com/SubmissionsIn/MFLVC) and [GCFAggMVC](https://github.com/Galaxy922/GCFAggMVC) for providing these datasets.
 
@@ -60,7 +60,7 @@ we compare our proposed SCMVC with 10 state-of-the-art multi-view clustering met
 - GCFAggMVC: [global and cross-view feature aggregation for multi-view clustering](https://github.com/Galaxy922/GCFAggMVC)
 - DealMVC: [dual contrastive calibration for multi-view clustering](https://github.com/xihongyang1999/DealMVC)
 
-<img src="https://github.com/SongwuJob/SCMVC/tree/main/figures/performance.png"  width="897"  />
+<img src="https://github.com/SongwuJob/SCMVC/blob/main/figures/performance.png"  width="897"  />
 
 ## 6.Acknowledgments
 

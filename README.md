@@ -65,7 +65,7 @@ we compare our proposed SCMVC with 10 state-of-the-art multi-view clustering met
 
 ## 6.Acknowledgments
 
-Our proposed SCMVC are inspired by [MFLVC](https://github.com/SubmissionsIn/MFLVC), and [GCFAggMVC](https://github.com/Galaxy922/GCFAggMVC). Thanks for these valuable works.
+Our proposed SCMVC are inspired by [MFLVC](https://github.com/SubmissionsIn/MFLVC), [GCFAggMVC](https://github.com/Galaxy922/GCFAggMVC), and [SEM](Self-weighted contrastive learning among multiple views for mitigating representation degeneration). Thanks for these valuable works.
 
 ## 7.Citation
 If you use our code or datasets in this repository for your research, please cite our paper.
@@ -81,6 +81,13 @@ If you use our code or datasets in this repository for your research, please cit
   doi={10.1109/TMM.2024.3387298}
 }
 
+@article{xu2024self,
+  title={Self-weighted contrastive learning among multiple views for mitigating representation degeneration},
+  author={Xu, Jie and Chen, Shuo and Ren, Yazhou and Shi, Xiaoshuang and Shen, Hengtao and Niu, Gang and Zhu, Xiaofeng},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
 ```
 
 If you have any problems, please contact me by songwu.work@outlook.com.
